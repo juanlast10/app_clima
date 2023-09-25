@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  /* color: rgba(5, 1, 17, 0.835); */
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.init {
+  height: 100vh;
+  background-size: cover;
+  background: url(./assets/img/8aLR.gif);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.region_container {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: darkslategrey;
+}
+
+.coutry_container, .city_container {
+  width: 350px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.coutry_container select, .city_container select {
+  height: 30px;
+  width: 300px;
+  margin: 10px 0;
+  border-radius: 20px;
+  color: darkslategrey;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.coutry_container option, .city_container option {
+  color: darkslategrey;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.temperature_container {
+  height: 100px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: darkslategrey;
+}

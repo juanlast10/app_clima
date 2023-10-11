@@ -60,32 +60,32 @@ function App() {
 
   return (
     <>
-    <div className="region_container">
-      <div className="coutry_container">
-        <label>Elige un país:</label>
-        <select onChange={countryHandler}>
-          <option value="">Selecciona</option>
-          {countries.map((country) => (
-            <option key={country.cca2} value={country.cca2}>
-              {country.name.common}
-            </option>
-          ))}
-        </select>
-      </div>
-
-      {cities.length > 0 && (
-        <div className="city_container">
-          <label>Elige una ciudad:</label>
-          <select onChange={cityHandler}>
+      <div className="region_container">
+        <div className="coutry_container">
+          <label>Elige un país:</label>
+          <select onChange={countryHandler}>
             <option value="">Selecciona</option>
-            {cities.map((city) => (
-              <option key={city.id}>{city.name}</option>
+            {countries.map((country) => (
+              <option key={country.cca2} value={country.cca2}>
+                {country.name.common}
+              </option>
             ))}
           </select>
         </div>
-      )}
-    </div>
-      
+
+        {cities.length > 0 && (
+          <div className="city_container">
+            <label>Elige una ciudad:</label>
+            <select onChange={cityHandler}>
+              <option value="">Selecciona</option>
+              {cities.map((city) => (
+                <option key={city.id}>{city.name}</option>
+              ))}
+            </select>
+          </div>
+        )}
+      </div>
+
       <hr />
 
       {weather && (
